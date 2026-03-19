@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Pushpan | Premium Flutter Developer & UI/UX Specialist</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Arun Pushpan, a Senior Flutter Developer specializing in premium cross-platform mobile experiences with 2.5+ years of expertise.">
+    <meta name="keywords" content="Flutter Developer, Mobile App Development, UI/UX Design, Dart, Cross-platform, Portfolio, Arun Pushpan">
+    <meta name="author" content="Arun Pushpan">
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Arun Pushpan | Premium Flutter Developer">
+    <meta property="og:description" content="Designing & building premium cross-platform mobile experiences.">
+    <meta property="og:image" content="https://arun-pushpan.github.io/portfolio/assets/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='65' font-family='sans-serif' font-size='50' fill='%236366f1' text-anchor='middle' font-weight='900'>AP</text></svg>">
+    <meta name="description" content="Portfolio of Arun Pushpan, a Results-driven Flutter Developer with 2.5+ years of experience in cross-platform mobile app development.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <!-- Navigation -->
+    <nav class="glass" id="navbar" style="position: fixed; top: 0; width: 100%; z-index: 1000; padding: 1.5rem 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="#" class="logo" style="font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem;">AP.</a>
+            <ul class="nav-links" style="display: flex; gap: 2rem;">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" style="display: none; cursor: pointer; font-size: 1.5rem;">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu glass" style="position: fixed; top: 0; right: -100%; width: 70%; height: 100vh; z-index: 1001; display: flex; flex-direction: column; justify-content: center; align-items: center; transition: var(--transition-standard);">
+        <div class="close-menu" style="position: absolute; top: 2rem; right: 2rem; font-size: 2rem; cursor: pointer;">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul style="display: flex; flex-direction: column; gap: 2rem; text-align: center; font-size: 1.5rem;">
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Particle Canvas -->
+        <canvas id="hero-canvas"></canvas>
+        
+        <div class="container" style="max-width: 800px; text-align: center; position: relative; z-index: 1;">
+            <div class="stagger-1" style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(99, 102, 241, 0.1); border-radius: 100px; border: 1px solid rgba(99, 102, 241, 0.2); margin-bottom: 2.5rem;">
+                <h2 class="sub-heading" style="color: var(--accent-primary); font-weight: 500; font-family: var(--font-body); font-size: 0.7rem; letter-spacing: 0.4em; text-transform: uppercase; margin: 0;">Flutter specialist</h2>
+            </div>
+            <h1 class="stagger-2" style="margin-bottom: 2rem; font-size: clamp(3rem, 10vw, 5.5rem); letter-spacing: -0.02em;">Arun Pushpan.</h1>
+            <h2 class="stagger-3" style="color: var(--text-secondary); font-weight: 400; margin-bottom: 3.5rem; line-height: 1.6; font-size: 1.4rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Designing & building <span class="text-gradient">premium</span> cross-platform mobile experiences with a focus on refined minimalism.
+            </h2>
+            <div class="stagger-4" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; align-items: center;">
+                <a href="#projects" class="btn-primary">Explore Work</a>
+                <a href="assets/resume.pdf" class="btn-secondary" download>Download CV</a>
+                <div style="display: flex; gap: 1rem; margin-left: 0.5rem;">
+                    <a href="https://github.com/Arun-pushpan" target="_blank" class="social-link-minimal" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/arun-pushpan-54a287249?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-link-minimal" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: start; max-width: 800px; margin: 0 auto;">
+                <div class="glass" style="padding: 3rem; border-radius: 24px;">
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8;">
+                        I am a Results-driven **Flutter Developer** with 2.5+ years of experience in creating high-performance, visually stunning cross-platform mobile applications. I specialize in the entire app development lifecycle, from initial concept to deployment on the App Store and Play Store.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; line-height: 1.8;">
+                        With a Bachelor’s in Computer Applications (BCA) and a Diploma in Computer Science & Engineering, I have a strong foundation in both the practical and theoretical aspects of software development.
+                    </p>
+                    <p style="color: var(--accent-primary); font-weight: 600; margin-bottom: 1rem;">Core Expertise:</p>
+                    <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <li><i class="fas fa-check" style="color: var(--accent-primary); margin-right: 10px;"></i> Flutter & Dart</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-primary); margin-right: 10px;"></i> Bloc & GetX</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-primary); margin-right: 10px;"></i> Firebase Ecosystem</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-primary); margin-right: 10px;"></i> Clean Architecture</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-primary); margin-right: 10px;"></i> Advanced Animations</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-primary); margin-right: 10px;"></i> API Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem;">
+                <div class="skill-card">
+                    <i class="fab fa-flutter"></i>
+                    <h3>Flutter</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>Dart</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Clean Arch</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Firebase</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Git/GitHub</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>REST APIs</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div style="display: flex; flex-direction: column; gap: 3rem;">
+                <div class="glass" style="padding: 2rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div>
+                            <h3 style="color: var(--secondary-accent);">Flutter Developer</h3>
+                            <h4>Clan LEO Pvt.Ltd</h4>
+                        </div>
+                        <span style="font-family: var(--font-heading); color: var(--text-secondary);">Apr 2023 - Present</span>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-arrow-right" style="font-size: 0.8rem; color: var(--secondary-accent); margin-right: 10px;"></i> Expertise in crafting cross-platform mobile applications utilising the flutter framework for both Android and iOS.</li>
+                        <li><i class="fas fa-arrow-right" style="font-size: 0.8rem; color: var(--secondary-accent); margin-right: 10px;"></i> Integrated REST APIs, Firebase, and WebSockets for real-time data synchronization.</li>
+                        <li><i class="fas fa-arrow-right" style="font-size: 0.8rem; color: var(--secondary-accent); margin-right: 10px;"></i> Implemented Bloc and GetX state management to ensure clean architecture and maintainable code.</li>
+                        <li><i class="fas fa-arrow-right" style="font-size: 0.8rem; color: var(--secondary-accent); margin-right: 10px;"></i> Built custom UI components following Material Design and Cupertino guidelines.</li>
+                    </ul>
+                </div>
+
+                <div class="glass" style="padding: 2rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div>
+                            <h3 style="color: var(--secondary-accent);">Flutter Intern</h3>
+                            <h4>Clan LEO Pvt.Ltd</h4>
+                        </div>
+                        <span style="font-family: var(--font-heading); color: var(--text-secondary);">Jan 2023 - Mar 2023</span>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-arrow-right" style="font-size: 0.8rem; color: var(--secondary-accent); margin-right: 10px;"></i> Collaborated with a team of developers to build and test features for a Flutter app</li>
+                        <li><i class="fas fa-arrow-right" style="font-size: 0.8rem; color: var(--secondary-accent); margin-right: 10px;"></i> Fixed front-end bugs and improved UI responsiveness across mobile and desktop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="glass hover-lift" style="padding: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
+                         <i class="fas fa-folder" style="font-size: 2.5rem; color: var(--secondary-accent);"></i>
+                         <div>
+                             <a href="#"><i class="fab fa-github" style="margin-right: 10px;"></i></a>
+                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                         </div>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Rigging Calculator</h3>
+                    <p style="color: var(--text-secondary);">Provide riggers, crane operators, and supervisors with accurate and quick results on-site.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; font-family: var(--font-heading); font-size: 0.8rem; color: var(--text-secondary);">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Calculations</span>
+                    </div>
+                </div>
+
+                <div class="glass hover-lift" style="padding: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
+                         <i class="fas fa-folder" style="font-size: 2.5rem; color: var(--secondary-accent);"></i>
+                         <div>
+                             <a href="#"><i class="fab fa-github" style="margin-right: 10px;"></i></a>
+                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                         </div>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">ReachOut</h3>
+                    <p style="color: var(--text-secondary);">Provide a smart, eco-friendly, and professional way to share contact and business details.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; font-family: var(--font-heading); font-size: 0.8rem; color: var(--text-secondary);">
+                        <span>Flutter</span>
+                        <span>NFC</span>
+                        <span>Contact Sharing</span>
+                    </div>
+                </div>
+
+                <div class="glass hover-lift" style="padding: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
+                         <i class="fas fa-folder" style="font-size: 2.5rem; color: var(--secondary-accent);"></i>
+                         <div>
+                             <a href="#"><i class="fab fa-github" style="margin-right: 10px;"></i></a>
+                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                         </div>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">BuyIT (Ongoing)</h3>
+                    <p style="color: var(--text-secondary);">Provide users with a simple and efficient way to create and manage purchase lists.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; font-family: var(--font-heading); font-size: 0.8rem; color: var(--text-secondary);">
+                        <span>Flutter</span>
+                        <span>E-commerce</span>
+                        <span>List Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <div class="glass" style="padding: 2rem; border-left: 4px solid var(--secondary-accent);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div>
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <p style="color: var(--text-secondary);">Indira Gandhi National Open University</p>
+                        </div>
+                        <span style="color: var(--secondary-accent);">Apr 2023 - Present</span>
+                    </div>
+                </div>
+                <div class="glass" style="padding: 2rem; border-left: 4px solid var(--secondary-accent);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div>
+                            <h3>Diploma In Computer Science & Engineering</h3>
+                            <p style="color: var(--text-secondary);">MVGM Govt.Polytechnic College | CGPA: 8.6</p>
+                        </div>
+                        <span style="color: var(--secondary-accent);">Jun 2019 - Aug 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="text-align: center;" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <h1 style="font-size: clamp(30px, 5vw, 50px); margin-bottom: 1.5rem;">Let's Build Something Together</h1>
+            <p style="max-width: 500px; margin: 0 auto 3rem; color: var(--text-secondary);">
+                Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+            </p>
+            <a href="mailto:arunpushpan2018@gmail.com" class="glass" style="padding: 1.25rem 2.5rem; border: 1px solid var(--secondary-accent); color: var(--secondary-accent); display: inline-block;">Say Hello</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="text-align: center;">
+            <div style="display: flex; gap: 2rem; justify-content: center; margin-bottom: 2rem; font-size: 1.5rem;">
+                <a href="https://github.com/Arun-pushpan" target="_blank" style="color: var(--text-secondary); transition: var(--transition-standard);" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-secondary)'"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arun-pushpan-54a287249?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" style="color: var(--text-secondary); transition: var(--transition-standard);" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-secondary)'"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:arunpushpan2018@gmail.com" style="color: var(--text-secondary); transition: var(--transition-standard);" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-secondary)'"><i class="far fa-envelope"></i></a>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; 2024 Arun Pushpan. Built with premium precision.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
