@@ -17,6 +17,11 @@
     --transition-standard: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+#navbar {
+    padding: 1.5rem 0;
+    transition: var(--transition-standard);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -375,10 +380,13 @@ section {
         padding-top: 20px;
     }
     #hero {
-        padding-top: 60px;
+        padding-top: 120px;
         min-height: auto;
         padding-bottom: 40px;
         background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
+    }
+    #navbar {
+        padding: 0.8rem 0 !important;
     }
     .hero-grid > div:last-child {
         justify-content: center !important;
